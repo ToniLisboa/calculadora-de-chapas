@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Chapas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Chapas</h1>
+
+        <!-- Dados das Peças -->
+        <h2>Dados das Peças:</h2>
+        <label for="larguraPeca">Largura (cm):</label>
+        <input type="number" id="larguraPeca" placeholder="Ex: 50">
+
+        <label for="comprimentoPeca">Comprimento (cm):</label>
+        <input type="number" id="comprimentoPeca" placeholder="Ex: 100">
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" placeholder="Ex: 10">
+
+        <!-- Dados da Chapa -->
+        <h2>Dados da Chapa:</h2>
+        <label for="larguraChapa">Largura da Chapa (cm):</label>
+        <input type="number" id="larguraChapa" placeholder="Ex: 200">
+
+        <label for="comprimentoChapa">Comprimento da Chapa (cm):</label>
+        <input type="number" id="comprimentoChapa" placeholder="Ex: 300">
+
+        <label for="espessura">Espessura da Chapa (mm):</label>
+        <input type="number" id="espessura" placeholder="Ex: 5">
+
+        <button onclick="calcular()">Calcular</button>
+
+        <!-- Resultados -->
+        <h2>Resultados:</h2>
+        <p id="resultadoChapas">Quantidade de chapas: </p>
+        <p id="resultadoArea">Área total (m²): </p>
+        <p id="resultadoPeso">Peso total (kg): </p>
+
+        <!-- Visualização da Chapa -->
+        <h2>Visualização da Chapa:</h2>
+        <canvas id="desenhoChapa" width="800" height="400"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
